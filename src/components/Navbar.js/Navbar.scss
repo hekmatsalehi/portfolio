@@ -1,0 +1,14 @@
+.nav-bar {
+    background-color: lightgray;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+}
