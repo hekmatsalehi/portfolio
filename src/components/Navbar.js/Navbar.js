@@ -16,7 +16,6 @@ export default function Navbar({ showNavMenu, setShowNavMenu }) {
                 </div>
                 <div className='nav-icon-container'>
                   <Email className='nav-icon' id='email-icon'/>
-                  <span>hekmatullahsalehi@gmail.com</span>
                 </div>
             </div>
             <div className='nav-right'>
