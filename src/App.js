@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 
 import Navbar from "./components/Navbar.js/Navbar";
 import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
+import Projects from "./components/Projects/ProjectsContainer";
 import Contact from "./components/Contact/Contact";
 import Resume from "./components/Resume/Resume";
 import NavMenu from './components/NavMenu/NavMenu';
