@@ -1,62 +1,62 @@
 .contact-me {
-    background-color: white;
+  background-color: white;
+  display: flex;
+
+  .contact-container {
+    position: relative;
+    flex: 1;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 600px;
 
-    .contact-container {
-        position: relative;
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        min-height: 600px;
-        
-        h2 {
-            font-size: 50px;
-        }
-        form {
-            width: 70%;
-            height: 70%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-
-
-            input {
-                width: 400px;
-                height: 30px;
-                font-size: 14px;
-                border-radius: 5px;
-                margin-top: 10px;
-
-
-            }
-            textarea {
-                width: 400px;
-                height: 200px;
-                font-size: 14px;
-                border-radius: 5px;
-                margin-top: 15px;
-            }
-
-            button {
-                font-size: 16px;
-                width: 150px;
-                height: 35px;
-                background-color: darksalmon;
-                border: none;
-                border-radius: 10px;
-                cursor: pointer;
-                margin-top: 10px;
-                
-                &:hover {
-                    background-color: rgb(203, 108, 76);
-                }
-            }
-            span {
-                color: green;
-            }
-        }
+    h2 {
+      font-size: 50px;
+      color: rgb(70, 70, 70);
     }
+    form {
+      width: 70%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        width: 400px;
+        height: 30px;
+        font-size: 14px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      textarea {
+        width: 400px;
+        height: 200px;
+        font-size: 14px;
+        border-radius: 5px;
+        margin-top: 15px;
+      }
+      .error {
+        margin: 4px;
+        color: rgb(235, 42, 42);
+      }
+      button {
+        font-size: 16px;
+        width: 150px;
+        height: 35px;
+        background-color: darksalmon;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 10px;
+
+        &:hover {
+          background-color: rgb(203, 108, 76);
+        }
+      }
+      span {
+        color: green;
+      }
+    }
+  }
 }

@@ -1,25 +1,23 @@
 .app-wrapper {
-    height: 100vh;
-    overflow-x: hidden;
-    .container {
-        width: 100%;
-        height: calc(100vh - 80px);
-        background-color: brown;
-        position: relative;
-        top: 80px;
-        scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
+  height: 100vh;
+  overflow-x: hidden;
+  .container {
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: relative;
+    top: 80px;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 
-        &::-webkit-scrollbar {
-            display: none;
-        }
-
-
-        > * {
-            width: 100vw;
-            height: calc(100vh - 80px);
-            scroll-snap-align: start;
-        }
+    &::-webkit-scrollbar {
+      display: none;
     }
+
+    > * {
+      width: 100vw;
+      height: calc(100vh - 80px);
+      scroll-snap-align: start;
+    }
+  }
 }

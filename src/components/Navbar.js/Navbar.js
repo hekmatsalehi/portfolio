@@ -1,6 +1,9 @@
 import React from 'react'
 import './Navbar.scss'
-import {GitHub, LinkedIn, Email} from '@material-ui/icons'
+import { GitHub } from '@material-ui/icons'
+import { SiGmail } from 'react-icons/si';
+import { FaLinkedin } from 'react-icons/fa';
+
 
 export default function Navbar({ showNavMenu, setShowNavMenu }) {
   return (
@@ -9,13 +12,13 @@ export default function Navbar({ showNavMenu, setShowNavMenu }) {
             <div className='nav-left'>
                 <a href="#about-me" className='my-name'>Hekmatullah Salehi</a>
                 <div className='nav-icon-container'>
-                  <GitHub className='nav-icon'/>
+                  <a href='https://github.com/hekmatsalehi' target="_blank"><GitHub className='nav-icon'/></a>
                 </div>
                 <div className='nav-icon-container'>
-                  <LinkedIn className='nav-icon' id='linkedin-icon'/>
+                  <a href='https://www.linkedin.com/in/hekmatullah-salehi' target="_blank"><FaLinkedin className='nav-icon' id='linkedin-icon'/></a>
                 </div>
                 <div className='nav-icon-container'>
-                  <Email className='nav-icon' id='email-icon'/>
+                  <a href="mailto:hekmatullahsalehi@gmail.com"><SiGmail className='nav-icon' id='email-icon'/></a>
                 </div>
             </div>
             <div className='nav-right'>
