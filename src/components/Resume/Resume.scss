@@ -1,3 +1,95 @@
 .resume {
-    background-color: blueviolet;
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    justify-content: center;
+    .resume-container {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 800px;
+        position: relative;
+
+
+        h2 {
+            font-size: 50px;
+            margin: 10px;
+
+        }
+
+        .skill-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .icon {
+                font-size: 100px;
+                padding: 10px 20px;
+
+            }
+            #html-icon {
+                color: rgb(255, 98, 0)
+            }
+            #css-icon {
+                color: rgb(33, 77, 251);
+            }
+            #bootstrap-icon {
+                color: rgb(129, 42, 215);
+
+            }
+            #javascript-icon {
+                color: rgb(218, 183, 10)
+            }
+            #jquery-icon {
+                color: rgb(17, 83, 216);
+            }
+            #react-icon {
+                color: rgb(0, 208, 255);
+            }
+            #node-icon {
+                color: rgb(72, 72, 72);
+            }
+            #mysql-icon {
+                color: rgb(0, 111, 196);
+            }
+            #mongodb-icon {
+                color: rgb(23, 169, 23);
+            }
+        }
+
+        a {
+            margin-top: 30px;
+            button {
+                font-size: 16px;
+                padding: 15px;
+                background-color: darksalmon;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                
+                &:hover {
+                    background-color: rgb(203, 108, 76);
+                }
+            }
+        }
+
+        .anchor-arrow-up {
+            position: absolute;
+            bottom: 20px;
+            color: black;
+            .arrow-up-icon {
+                font-size: 45px;
+                animation: arrowBlink 2s infinite;
+
+            }
+            @keyframes arrowBlink {
+                100% {
+                    opacity: 0;
+                }
+                
+            }
+        }
+    }
+ 
 }

@@ -57,7 +57,6 @@ export default function Contact() {
   };
   return (
     <div className="contact-me" id="contact-me">
-      <div className="left"></div>
       <div className="contact-container">
         <h2>Contact</h2>
         <form ref={form} onSubmit={handleSubmit}>
