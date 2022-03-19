@@ -18,25 +18,40 @@
       color: $title-color;
     }
     form {
-      width: 70%;
+      width: 80%;
       height: 70%;
       display: flex;
       flex-direction: column;
       align-items: center;
 
+  
+      @include widescreen {
+        width: 100%;
+ 
+      }
+   
+
       input {
-        width: 400px;
-        height: 30px;
+        width: 50%;
+        height: 35px;
         font-size: 14px;
         border-radius: 5px;
         margin-top: 10px;
+
+        @include ipad-tablet {
+          width: 70%;
+        }
       }
       textarea {
-        width: 400px;
+        width: 50%;
         height: 200px;
         font-size: 14px;
         border-radius: 5px;
         margin-top: 15px;
+
+        @include ipad-tablet {
+          width: 70%;
+        }
       }
       .error {
         margin: 4px;

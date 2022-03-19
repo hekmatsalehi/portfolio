@@ -20,7 +20,7 @@ export default function About() {
     <div className='about-me' id='about-me'>
       <div className='left-side'>
         <div className='photo-container'>
-          <img src='assets/myPicture.png'></img>
+          <img src='assets/myPicture.png' id='photo'></img>
         </div>
       </div>
 

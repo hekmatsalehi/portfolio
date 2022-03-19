@@ -11,7 +11,9 @@ export default function Navbar({ showNavMenu, setShowNavMenu }) {
         <div className='nav-container'>
             <div className='nav-left'>
                 <a href="#about-me" className='my-name'>Hekmatullah Salehi</a>
-                <div className='nav-icon-container'>
+            </div>
+            <div className='nav-center'>
+            <div className='nav-icon-container'>
                   <a href='https://github.com/hekmatsalehi' target="_blank"><GitHub className='nav-icon'/></a>
                 </div>
                 <div className='nav-icon-container'>
@@ -20,6 +22,7 @@ export default function Navbar({ showNavMenu, setShowNavMenu }) {
                 <div className='nav-icon-container'>
                   <a href="mailto:hekmatullahsalehi@gmail.com"><SiGmail className='nav-icon' id='email-icon'/></a>
                 </div>
+
             </div>
             <div className='nav-right'>
               <div className='nav-hamburger' onClick={() => setShowNavMenu(!showNavMenu)}>
