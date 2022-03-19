@@ -1,8 +1,10 @@
+@import '../../main.scss';
+
 .nav-menu {
   transition: all 1s ease;
   width: 350px;
   height: 100vh;
-  background-color: rgb(128, 128, 128);
+  background-color: $primary-color;
   position: fixed;
   top: 0;
   right: 0;

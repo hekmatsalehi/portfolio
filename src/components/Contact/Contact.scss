@@ -1,3 +1,5 @@
+@import '../../main.scss';
+
 .contact-me {
   background-color: white;
   display: flex;
@@ -13,7 +15,7 @@
 
     h2 {
       font-size: 50px;
-      color: rgb(70, 70, 70);
+      color: $title-color;
     }
     form {
       width: 70%;
@@ -44,14 +46,14 @@
         font-size: 16px;
         width: 150px;
         height: 35px;
-        background-color: darksalmon;
+        background-color: $secodary-color;
         border: none;
         border-radius: 10px;
         cursor: pointer;
         margin-top: 10px;
 
         &:hover {
-          background-color: rgb(203, 108, 76);
+          background-color: $button-hover;
         }
       }
       span {
