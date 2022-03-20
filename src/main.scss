@@ -16,4 +16,10 @@ $button-hover: rgb(203, 108, 76);
     @media (max-width: 768px) {
         @content
     }    
+};
+
+@mixin mobile-screen {
+    @media (max-width: 420px) {
+        @content
+    }    
 }

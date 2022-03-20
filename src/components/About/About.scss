@@ -1,16 +1,30 @@
-@import '../../main.scss';
+@import "../../main.scss";
 
 .about-me {
   background-color: white;
   display: flex;
+  @include wide-screen {
+    flex-direction: column;
+  }
   .left-side {
     flex: 0.5;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 700px;
+    @include wide-screen {
+      align-items: flex-start;
+      flex: 0.4;
+      min-height: 490px;
+    }
+    @include small-screen {
+      flex: 0.3;
+      min-height: 440px;
+    }
 
-
+    @include mobile-screen {
+      min-height: 260px;
+    }
     .photo-container {
       width: 70%;
       background-color: $secodary-color;
@@ -18,7 +32,18 @@
       display: flex;
       align-items: flex-end;
       justify-content: center;
-
+      @include wide-screen {
+        width: 450px;
+        margin-top: 10px;
+      }
+      @include small-screen {
+        width: 400px;
+        background-color: white;
+        transition: width 400ms linear;
+      }
+      @include mobile-screen {
+        width: 250px;
+      }
       #photo {
         margin: 25px;
         margin-bottom: 0px;
@@ -28,10 +53,19 @@
 
   .right-side {
     min-height: 700px;
-
+    margin-right: 40px;
     flex: 0.5;
     overflow: hidden;
     position: relative;
+
+    @include wide-screen {
+      flex: 0.6;
+      margin-right: 0;
+      min-height: 270px;
+    }
+    @include small-screen {
+      flex: 0.7;
+    }
 
     .right-side-wrapper {
       width: 100%;
@@ -40,21 +74,84 @@
       flex-direction: column;
       justify-content: center;
 
+      @include wide-screen {
+        align-items: center;
+        justify-content: flex-start;
+      }
+
       h1 {
         font-size: 50px;
         margin: 10px 0;
         color: $title-color;
+
+        @include wide-screen {
+          font-size: 40px;
+          transition: font-size 400ms linear;
+        }
+        @include small-screen {
+          font-size: 30px;
+          transition: font-size 400ms linear;
+          margin: 5px 0;
+        }
+
+        @include mobile-screen {
+          font-size: 20px;
+          margin: 5px 0;
+        }
       }
       h2 {
         font-size: 30px;
         color: $title-color;
+
+        @include wide-screen {
+          font-size: 25px;
+          transition: font-size 400ms linear;
+        }
+        @include small-screen {
+          font-size: 20px;
+          transition: font-size 400ms linear;
+        }
+
+        @include mobile-screen {
+          font-size: 16px;
+        }
       }
       h3 {
         font-size: 30px;
         color: $title-color;
 
+        @include wide-screen {
+          font-size: 25px;
+          transition: font-size 400ms linear;
+        }
+        @include small-screen {
+          font-size: 20px;
+          transition: font-size 400ms linear;
+        }
+
+        @include mobile-screen {
+          font-size: 16px;
+        }
+
         span {
           color: $secodary-color;
+        }
+      }
+
+      p {
+        margin-top: 10px;
+        font-size: 18px;
+        color: $title-color;
+        @include wide-screen {
+          text-align: justify;
+          padding: 0 30px;
+        }
+        @include small-screen {
+          font-size: 16px;
+          transition: font-size 400ms linear;
+        }
+        @include mobile-screen {
+          font-size: 14px;
         }
       }
     }
@@ -69,6 +166,14 @@
         font-size: 70px;
         font-weight: lighter;
         animation: arrowBlink 2s infinite;
+
+        @include small-screen {
+          font-size: 60px;
+          transition: font-size 400ms linear;
+        }
+        @include mobile-screen {
+          font-size: 50px;
+        }
       }
 
       @keyframes arrowBlink {
