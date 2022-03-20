@@ -1,4 +1,4 @@
-@import '../../main.scss';
+@import "../../main.scss";
 
 .nav-bar {
   width: 100%;
@@ -13,6 +13,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
+    @include mobile-screen {
+      padding: 20px 10px;
+    }
 
     .nav-left {
       flex: 1;
@@ -25,6 +28,17 @@
         font-size: 40px;
         font-weight: 700;
         margin-right: 30px;
+
+        @include wide-screen {
+          font-size: 35px;
+          transition: font-size 400ms linear;
+        }
+        @include small-screen {
+          font-size: 28px;
+        }
+        @include mobile-screen {
+          font-size: 20px;
+        }
       }
     }
 
@@ -35,6 +49,12 @@
       display: flex;
       align-items: center;
 
+      @include wide-screen {
+        flex: 0.5;
+      }
+      @include small-screen {
+        display: none;
+      }
       .nav-icon-container {
         display: flex;
         align-items: center;
@@ -61,6 +81,13 @@
       flex: 1;
       display: flex;
       justify-content: flex-end;
+
+      @include wide-screen {
+        flex: 0.3;
+      }
+      @include mobile-screen {
+        flex: 0.2;
+      }
       .nav-hamburger {
         display: flex;
         flex-direction: column;
@@ -68,6 +95,15 @@
         width: 32px;
         height: 25px;
         cursor: pointer;
+        @include small-screen {
+          width: 30px;
+          height: 22px;
+          overflow: hidden;
+        }
+        @include mobile-screen {
+          width: 26px;
+          height: 18px;
+        }
       }
       span {
         width: 100%;
