@@ -16,6 +16,10 @@
     h2 {
       font-size: 50px;
       color: $title-color;
+      @include small-screen {
+        font-size: 35px;
+        transition: font-size 400ms linear;
+      }
     }
     form {
       width: 80%;
@@ -25,11 +29,14 @@
       align-items: center;
 
   
-      @include widescreen {
+      @include wide-screen {
         width: 100%;
- 
+        transition: width 400ms linear;
       }
-   
+      @include small-screen {
+        width: 140%;
+        transition: width 400ms linear;
+      }
 
       input {
         width: 50%;
@@ -38,9 +45,7 @@
         border-radius: 5px;
         margin-top: 10px;
 
-        @include ipad-tablet {
-          width: 70%;
-        }
+     
       }
       textarea {
         width: 50%;
@@ -48,10 +53,6 @@
         font-size: 14px;
         border-radius: 5px;
         margin-top: 15px;
-
-        @include ipad-tablet {
-          width: 70%;
-        }
       }
       .error {
         margin: 4px;

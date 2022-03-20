@@ -6,13 +6,13 @@ $button-hover: rgb(203, 108, 76);
 
 
 
-@mixin widescreen {
+@mixin wide-screen {
     @media (max-width: 1024px) {
         @content
     }    
 };
 
-@mixin ipad-tablet {
+@mixin small-screen {
     @media (max-width: 768px) {
         @content
     }    
