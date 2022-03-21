@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { init } from "ityped";
 import { KeyboardArrowDown } from "@material-ui/icons";
 import "./About.scss";
+import MyPicture from '../../images/MyPicture.png'
 
 export default function About() {
   const roleRef = useRef();
@@ -17,7 +18,7 @@ export default function About() {
     <div className="about-me" id="about-me">
       <div className="left-side">
         <div className="photo-container">
-          <img src="assets/myPicture.png" id="photo"></img>
+          <img src={MyPicture} id="photo"></img>
         </div>
       </div>
 

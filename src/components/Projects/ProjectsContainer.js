@@ -1,6 +1,11 @@
 import React from "react";
 import ProjectsCard from "./ProjectCard";
-
+import RateMyPortfolioImage from '../../images/RateMyPortfolio.png'
+import EcommerceImage from '../../images/EcommerceImage.png'
+import TextEditorImage from '../../images/TextEditorImage.png'
+import CodeQuizImage from '../../images/CodeQuizImage.png'
+import DayPlannerImage from '../../images/DayPlannerImage.png'
+import WeatherDashboardImage from '../../images/WeatherDashboardImage.png'
 
 const projects = [
   {
@@ -8,7 +13,7 @@ const projects = [
     title: "Rate My Portfolio",
     details:
       "Mern Stack Application. Used Tailwind, React, Node, Express.js, MongoDb, JWT and GraphQl",
-    image: 'assets/RateMyPortfolio.png',
+    image: `${RateMyPortfolioImage}`,
     alt: "Rate My Portfolio",
     repo: "https://github.com/hekmatsalehi/rate-my-portfolio",
     demo: "https://floating-fjord-17758.herokuapp.com",
@@ -18,7 +23,7 @@ const projects = [
     title: "Shady Market Place",
     details:
       "This is an E-commerce website. Used Bootstrap, Express.js, Express-handlebars, Express-session, Sequelize, MySQL and Stripe",
-    image: 'assets/EcommerceImage.png',
+    image: `${EcommerceImage}`,
     alt: "Shady Market Place",
     repo: "https://github.com/DavisRansom/E-Commerce-Marketplace",
     demo: "https://e-commerce-store-w-stripe-2022.herokuapp.com",
@@ -28,7 +33,7 @@ const projects = [
     title: "Text Editor",
     details:
       "Installable application that run in the browser. Build based on Progressive Web Application criteria",
-    image: 'assets/TextEditorImage.png',
+    image: `${TextEditorImage}`,
     alt: "Text Editor",
     repo: "https://github.com/hekmatsalehi/text-editor",
     demo: "https://txeditor.herokuapp.com",
@@ -38,7 +43,7 @@ const projects = [
     title: "Code Quiz",
     details:
       "Tmed based quiz. Used HTML, CSS and JavaScript",
-    image: 'assets/CodeQuizImage.png',
+    image: `${CodeQuizImage}`,
     alt: "Code Quiz",
     repo: "https://github.com/hekmatsalehi/code-quiz",
     demo: "https://hekmatsalehi.github.io/code-quiz",
@@ -48,7 +53,7 @@ const projects = [
     title: "Day Planner",
     details:
       "Users can save the events for each hour of the day. Used HTML, CSS, Bootstrap, and jQuery",
-    image: 'assets/DayPlannerImage.png',
+    image: `${DayPlannerImage}`,
     alt: "Day Planner",
     repo: "https://github.com/hekmatsalehi/day-planner",
     demo: "https://hekmatsalehi.github.io/day-planner",
@@ -58,7 +63,7 @@ const projects = [
     title: "Weather Dashboard",
     details:
       "Shows the weather forecast of the US cities. Used HTML, CSS, JavaScript, and weather API",
-    image: 'assets/WeatherDashboardImage.png',
+    image: `${WeatherDashboardImage}`,
     alt: "Weather Dashboard",
     repo: "https://github.com/hekmatsalehi/weather-dashboard",
     demo: "https://hekmatsalehi.github.io/weather-dashboard",

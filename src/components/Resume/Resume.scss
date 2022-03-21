@@ -22,7 +22,7 @@
     }
     @include mobile-screen {
       width: 90%;
-      min-height: 500px;
+      min-height: fit-content;
     }
 
     h2 {
