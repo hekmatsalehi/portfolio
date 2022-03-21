@@ -1,21 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio2/static/css/main.f55fbbd7.css",
-    "main.js": "/portfolio2/static/js/main.5bf94e7f.js",
-    "static/media/RateMyPortfolio.png": "/portfolio2/static/media/RateMyPortfolio.2b7d8ffaf6b55354a15d.png",
-    "static/media/EcommerceImage.png": "/portfolio2/static/media/EcommerceImage.c1dfef68715033188bdb.png",
-    "static/media/MyPhoto.jpg": "/portfolio2/static/media/MyPhoto.62bea9208ba80b00d24a.jpg",
-    "static/media/WeatherDashboardImage.png": "/portfolio2/static/media/WeatherDashboardImage.f4ca33004e9dde136c62.png",
-    "static/media/HekmatullahSalehi_Resume.pdf": "/portfolio2/static/media/HekmatullahSalehi_Resume.ff694e5cbaa0eea2f255.pdf",
-    "static/media/TextEditorImage.png": "/portfolio2/static/media/TextEditorImage.753764eeb8d93a8aeddb.png",
-    "static/media/DayPlannerImage.png": "/portfolio2/static/media/DayPlannerImage.126d0d652931a21e4dd5.png",
-    "static/media/CodeQuizImage.png": "/portfolio2/static/media/CodeQuizImage.8291d732da12e7830453.png",
-    "index.html": "/portfolio2/index.html",
-    "main.f55fbbd7.css.map": "/portfolio2/static/css/main.f55fbbd7.css.map",
-    "main.5bf94e7f.js.map": "/portfolio2/static/js/main.5bf94e7f.js.map"
+    "main.css": "/portfolio/static/css/main.be1d4e7d.css",
+    "main.js": "/portfolio/static/js/main.e7c1e1b8.js",
+    "index.html": "/portfolio/index.html",
+    "main.be1d4e7d.css.map": "/portfolio/static/css/main.be1d4e7d.css.map",
+    "main.e7c1e1b8.js.map": "/portfolio/static/js/main.e7c1e1b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.f55fbbd7.css",
-    "static/js/main.5bf94e7f.js"
+    "static/css/main.be1d4e7d.css",
+    "static/js/main.e7c1e1b8.js"
   ]
 }
