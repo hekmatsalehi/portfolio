@@ -1,4 +1,4 @@
-@import '../../main.scss';
+@import "../../main.scss";
 
 .resume {
   background-color: $page-background;
@@ -13,10 +13,33 @@
     min-height: 600px;
     position: relative;
 
+    @include wide-screen {
+      width: 70%;
+      transition: width 400ms linear;
+    }
+    @include small-screen {
+      width: 85%;
+    }
+    @include mobile-screen {
+      width: 90%;
+      min-height: 500px;
+    }
+
     h2 {
       font-size: 50px;
       margin: 10px;
       color: $title-color;
+
+      @include wide-screen {
+        font-size: 35px;
+        transition: font-size 400ms linear;
+      }
+      @include small-screen {
+        font-size: 28px;
+      }
+      @include mobile-screen {
+        font-size: 20px;
+      }
     }
 
     .skill-icons {
@@ -28,6 +51,18 @@
       .icon {
         font-size: 100px;
         padding: 10px 20px;
+
+        @include wide-screen {
+          font-size: 85px;
+          transition: font-size 400ms linear;
+        }
+        @include small-screen {
+          font-size: 75px;
+        }
+        @include mobile-screen {
+          font-size: 60px;
+          padding: 5px 20px;
+        }
       }
       #html-icon {
         color: rgb(255, 98, 0);
@@ -68,6 +103,14 @@
         border-radius: 10px;
         cursor: pointer;
 
+        @include small-screen {
+          padding: 12px;
+        }
+        @include mobile-screen {
+          padding: 10px;
+          font-size: 14px;
+        }
+
         &:hover {
           background-color: $button-hover;
         }
@@ -81,6 +124,14 @@
       .arrow-up-icon {
         font-size: 45px;
         animation: arrowBlink 2s infinite;
+
+        @include small-screen {
+          font-size: 40px;
+          transition: font-size 400ms linear;
+        }
+        @include mobile-screen {
+          font-size: 30px;
+        }
       }
       @keyframes arrowBlink {
         100% {
