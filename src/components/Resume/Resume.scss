@@ -4,6 +4,9 @@
   background-color: $page-background;
   display: flex;
   justify-content: center;
+  @include mobile-screen {
+   overflow: hidden;
+  }
 
   .resume-container {
     width: 70%;
@@ -22,7 +25,6 @@
     }
     @include mobile-screen {
       width: 90%;
-      min-height: 450px;
     }
 
     h2 {
@@ -122,7 +124,7 @@
       bottom: 20px;
       color: black;
       @include mobile-screen {
-        bottom: 50px;
+        bottom: 70px;
       }
       .arrow-up-icon {
         font-size: 45px;

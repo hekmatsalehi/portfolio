@@ -6,6 +6,9 @@
   @include wide-screen {
     flex-direction: column;
   }
+  @include mobile-screen {
+    overflow: hidden;
+  }
   .left-side {
     flex: 0.5;
     display: flex;
@@ -67,10 +70,7 @@
       flex: 0.7;
 
     }
-    @include mobile-screen {
-      min-height: fit-content;
-
-    }
+  
 
     .right-side-wrapper {
       width: 100%;
@@ -166,6 +166,10 @@
       bottom: 10px;
       left: 45%;
       color: black;
+
+      @include mobile-screen {
+        bottom: 40px;
+      }
 
       .arrow-down-icon {
         font-size: 70px;
