@@ -12,17 +12,37 @@
     margin: 10px;
     color: $title-color;
     min-height: 60px;
+
+    @include wide-screen {
+      font-size: 35px;
+      transition: font-size 400ms linear;
+      overflow: hidden;
+    }
+    @include small-screen {
+      font-size: 28px;
+      min-height: 32px;
+    }
+    @include mobile-screen {
+      font-size: 20px;
+      min-height: 24px;
+
+    }
   }
 
   .projects-container {
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 
+    @include wide-screen {
+      width: 90%;
+      transition: width 400ms linear;
+    }
+
     .project-card {
-      width: 350px;
+      width: 380px;
       height: 250px;
       border-radius: 7px;
       border: 1px solid $primary-color;
@@ -34,10 +54,37 @@
       position: relative;
       transition: all 1s ease;
 
+      @include wide-screen {
+        width: 300px;
+        height: 200px;
+        transition: width 400ms linear;
+        transition: height 400ms linear;
+      }
+      @include small-screen {
+        width: 245px;
+        height: 165px;
+        transition: width 400ms linear;
+        transition: height 400ms linear;
+      }
+
+
       h3 {
         font-size: 22px;
         position: absolute;
         margin-bottom: 50px;
+
+        @include small-screen {
+          font-size: 18px;
+          transition: font-size 400ms linear;
+          margin-bottom: 45px;
+
+        }
+        @include mobile-screen {
+          font-size: 16px;
+          transition: font-size 400ms linear;
+        }
+
+
       }
 
       .button-wrapper {
@@ -47,6 +94,10 @@
         margin-top: 50px;
         overflow: hidden;
 
+        @include small-screen {
+          margin-top: 45px;
+        }
+
         a {
           color: inherit;
           .github-icon,
@@ -54,6 +105,15 @@
             margin: 10px;
             font-size: 40px;
             cursor: pointer;
+
+            @include small-screen {
+              font-size: 30px;
+              transition: font-size 400ms linear;
+            }
+            @include mobile-screen {
+              font-size: 27px;
+              transition: font-size 400ms linear;
+            }
           }
           .launch-icon {
             color: darkblue;

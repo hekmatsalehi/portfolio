@@ -16,10 +16,19 @@
     h2 {
       font-size: 50px;
       color: $title-color;
-      @include small-screen {
+      @include wide-screen {
         font-size: 35px;
         transition: font-size 400ms linear;
       }
+      @include small-screen {
+        font-size: 30px;
+        transition: font-size 400ms linear;
+      }
+      @include mobile-screen {
+        font-size: 20px;
+        transition: font-size 400ms linear;
+      }
+
     }
     form {
       width: 80%;
@@ -45,6 +54,10 @@
         border-radius: 5px;
         margin-top: 10px;
 
+        @include mobile-screen {
+          height: 30px;
+          transition: height 400ms linear;
+        }
      
       }
       textarea {
@@ -53,6 +66,11 @@
         font-size: 14px;
         border-radius: 5px;
         margin-top: 15px;
+
+        @include mobile-screen {
+          height: 180px;
+          transition: height 400ms linear;
+        }
       }
       .error {
         margin: 4px;
@@ -67,6 +85,12 @@
         border-radius: 10px;
         cursor: pointer;
         margin-top: 10px;
+
+        @include mobile-screen {
+          width: 120px;
+          height: 32px;
+          font-size: 14px;
+        }
 
         &:hover {
           background-color: $button-hover;
