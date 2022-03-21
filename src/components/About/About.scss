@@ -65,6 +65,11 @@
     }
     @include small-screen {
       flex: 0.7;
+
+    }
+    @include mobile-screen {
+      min-height: fit-content;
+
     }
 
     .right-side-wrapper {

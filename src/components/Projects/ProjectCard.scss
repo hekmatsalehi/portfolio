@@ -63,8 +63,12 @@
       @include small-screen {
         width: 245px;
         height: 165px;
-        transition: width 400ms linear;
-        transition: height 400ms linear;
+    
+      }
+      @include mobile-screen {
+        width: 265px;
+        height: 175px;
+       
       }
 
 

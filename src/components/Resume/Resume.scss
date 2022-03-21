@@ -22,7 +22,7 @@
     }
     @include mobile-screen {
       width: 90%;
-      min-height: fit-content;
+      min-height: 450px;
     }
 
     h2 {
@@ -121,6 +121,9 @@
       position: absolute;
       bottom: 20px;
       color: black;
+      @include mobile-screen {
+        bottom: 50px;
+      }
       .arrow-up-icon {
         font-size: 45px;
         animation: arrowBlink 2s infinite;
