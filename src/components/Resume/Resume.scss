@@ -4,7 +4,9 @@
   background-color: $page-background;
   display: flex;
   justify-content: center;
-
+  @include mobile-screen {
+    background-color: white;
+  }
   .resume-container {
     width: 70%;
     display: flex;
@@ -39,6 +41,7 @@
       }
       @include mobile-screen {
         font-size: 20px;
+        // padding-top: 20px;
       }
     }
 
@@ -122,7 +125,7 @@
       bottom: 20px;
       color: black;
       @include mobile-screen {
-        bottom: 50px;
+        bottom: 60px;
       }
       .arrow-up-icon {
         font-size: 45px;

@@ -1,11 +1,6 @@
-@import "./main.scss";
-
 .app-wrapper {
   height: 100vh;
   overflow-x: hidden;
-  @include mobile-screen {
-    overflow: hidden;
-  }
   .container {
     width: 100%;
     height: calc(100vh - 80px);
@@ -14,7 +9,6 @@
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     scrollbar-width: none;
-
 
     &::-webkit-scrollbar {
       display: none;
