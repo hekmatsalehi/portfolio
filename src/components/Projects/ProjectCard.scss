@@ -6,9 +6,9 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-    @include mobile-screen {
-      background-color: white;
-    }
+  @include mobile-screen {
+    overflow: hidden;
+  }
 
   h1 {
     font-size: 50px;

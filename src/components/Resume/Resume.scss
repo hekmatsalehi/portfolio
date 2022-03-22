@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   @include mobile-screen {
-    background-color: white;
+    overflow: hidden;
   }
   .resume-container {
     width: 70%;
@@ -41,7 +41,6 @@
       }
       @include mobile-screen {
         font-size: 20px;
-        // padding-top: 20px;
       }
     }
 

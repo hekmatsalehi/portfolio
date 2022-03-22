@@ -7,10 +7,6 @@
   top: 0;
   z-index: 3;
   transition: all 1s ease;
-  @include mobile-screen {
-    overflow: hidden;
-    height: 60px;
-  }
 
   .nav-container {
     display: flex;

@@ -3,7 +3,9 @@
 .contact-me {
   background-color: white;
   display: flex;
-
+  @include mobile-screen {
+    overflow: hidden;
+  }
   .contact-container {
     position: relative;
     flex: 1;
