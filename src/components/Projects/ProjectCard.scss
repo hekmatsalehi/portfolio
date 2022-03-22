@@ -40,6 +40,11 @@
       width: 90%;
       transition: width 400ms linear;
     }
+    @include mobile-screen {
+      width: 90%;
+      height: 90%;
+      transition: width 400ms linear;
+    }
 
     .project-card {
       width: 380px;

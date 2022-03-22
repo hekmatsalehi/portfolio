@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   @include mobile-screen {
-   overflow: hidden;
+    // overflow: hidden;
   }
 
   .resume-container {
@@ -25,6 +25,7 @@
     }
     @include mobile-screen {
       width: 90%;
+      min-height: fit-content;
     }
 
     h2 {
