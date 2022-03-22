@@ -6,30 +6,23 @@
   @include wide-screen {
     flex-direction: column;
   }
-  @include mobile-screen {
-    // overflow: hidden;
-  }
   .left-side {
     flex: 0.5;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 700px;
+    min-height: 600px;
     @include wide-screen {
-      align-items: flex-start;
-      flex: 0.4;
-      min-height: 490px;
+      flex: 0.6;
+      min-height: 430px;
     }
     @include small-screen {
       flex: 0.3;
       min-height: 440px;
     }
-    @include mobile-screen {
-      flex: 0.6;
-      min-height: fit-content;
-    }
 
     @include mobile-screen {
+      flex: 0.4;
       min-height: fit-content;
     }
     .photo-container {
@@ -40,8 +33,7 @@
       align-items: flex-end;
       justify-content: center;
       @include wide-screen {
-        width: 450px;
-        margin-top: 10px;
+        width: 40%;
       }
       @include small-screen {
         width: 400px;
@@ -49,7 +41,7 @@
         transition: width 400ms linear;
       }
       @include mobile-screen {
-        width: 250px;
+        width: 238px;
       }
       #photo {
         margin: 25px;
@@ -59,26 +51,24 @@
   }
 
   .right-side {
-    min-height: 700px;
+    min-height: 600px;
     margin-right: 40px;
     flex: 0.5;
     overflow: hidden;
     position: relative;
 
     @include wide-screen {
-      flex: 0.6;
+      flex: 0.4;
       margin-right: 0;
-      min-height: 270px;
+      min-height: 250px;
     }
     @include small-screen {
       flex: 0.7;
-
     }
     @include mobile-screen {
-      flex: 0.7;
+      flex: 0.6;
       min-height: fit-content;
     }
-  
 
     .right-side-wrapper {
       width: 100%;
@@ -98,7 +88,8 @@
         color: $title-color;
 
         @include wide-screen {
-          font-size: 40px;
+          margin: 5px 0;
+          font-size: 35px;
           transition: font-size 400ms linear;
         }
         @include small-screen {
@@ -174,11 +165,9 @@
       bottom: 10px;
       left: 45%;
       color: black;
-
       @include mobile-screen {
-        bottom: 50px;
+        bottom: 70px;
       }
-
       .arrow-down-icon {
         font-size: 70px;
         font-weight: lighter;

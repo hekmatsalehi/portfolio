@@ -24,7 +24,7 @@
     }
     @include mobile-screen {
       font-size: 20px;
-      min-height: 24px;
+      margin: 5px;
 
     }
   }
@@ -38,11 +38,6 @@
 
     @include wide-screen {
       width: 90%;
-      transition: width 400ms linear;
-    }
-    @include mobile-screen {
-      width: 90%;
-      height: 90%;
       transition: width 400ms linear;
     }
 
