@@ -4,14 +4,16 @@
   background-color: $page-background;
   display: flex;
   justify-content: center;
-
+  @include mobile-screen {
+    overflow: hidden;
+  }
   .resume-container {
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 600px;
-    position: relative;
+    // position: relative;
 
     @include wide-screen {
       width: 70%;
@@ -118,11 +120,11 @@
     }
 
     .anchor-arrow-up {
-      position: absolute;
-      bottom: 20px;
+      // position: absolute;
+      margin-top: 90px;
       color: black;
       @include mobile-screen {
-        bottom: 50px;
+        bottom: 0;
       }
       .arrow-up-icon {
         font-size: 45px;
