@@ -4,9 +4,7 @@
   background-color: $primary-background;
   display: flex;
   justify-content: center;
-  @include mobile-screen {
-    overflow: hidden;
-  }
+
   .resume-container {
     width: 70%;
     display: flex;
@@ -24,12 +22,11 @@
     }
     @include mobile-screen {
       width: 90%;
-      min-height: fit-content;
     }
 
     h2 {
       font-size: 50px;
-      margin: 10px;
+      margin-top: 10px;
       color: $title-color;
 
       @include wide-screen {
@@ -40,7 +37,9 @@
         font-size: 28px;
       }
       @include mobile-screen {
+        margin-top: 30px;
         font-size: 20px;
+        overflow: hidden;
       }
     }
 

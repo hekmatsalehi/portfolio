@@ -4,7 +4,7 @@
   transition: all 0.5s ease;
   width: 350px;
   height: 100vh;
-  background-color: whitesmoke;
+  background-color: $button;
   position: fixed;
   top: 0;
   right: 0;
@@ -33,6 +33,7 @@
     padding: 0;
     font-size: 35px;
     list-style: none;
+    color: $primary-background;
     width: 60%;
     @include small-screen {
       font-size: 28px;

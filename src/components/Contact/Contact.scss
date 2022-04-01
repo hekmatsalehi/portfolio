@@ -3,9 +3,7 @@
 .contact-me {
   background-color: $secondary-background;
   display: flex;
-  @include mobile-screen {
-    overflow: hidden;
-  }
+
   .contact-container {
     position: relative;
     flex: 1;
@@ -16,7 +14,7 @@
     min-height: 600px;
 
     @include mobile-screen {
-      min-height: 500px;
+      min-height: 520px;
       overflow: hidden;
     }
 
