@@ -7,7 +7,7 @@ import {
   FaNode,
 } from "react-icons/fa";
 import { SiJavascript, SiMysql, SiMongodb, SiJquery } from "react-icons/si";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import { CgChevronDoubleUpO } from "react-icons/cg";
 import MyResume from '../../images/HekmatullahSalehi_Resume.pdf';
 
 import "./Resume.scss";
@@ -31,7 +31,7 @@ export default function Resume() {
           <button className="download-btn">Download My Resume</button>
         </a>
         <a href="#about-me" className="anchor-arrow-up">
-          <HiOutlineChevronDoubleUp className="arrow-up-icon" />
+          <CgChevronDoubleUpO className="arrow-up-icon" />
         </a>
       </div>
     </div>

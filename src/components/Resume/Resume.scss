@@ -1,7 +1,7 @@
 @import "../../main.scss";
 
 .resume {
-  background-color: $page-background;
+  background-color: $primary-background;
   display: flex;
   justify-content: center;
   @include mobile-screen {
@@ -53,7 +53,9 @@
       .icon {
         font-size: 100px;
         padding: 10px 20px;
-
+        margin: 10px;
+        border: 1px solid #b76604;
+        box-shadow: 0px 0px 10px $button;
         @include wide-screen {
           font-size: 85px;
           transition: font-size 400ms linear;
@@ -64,6 +66,8 @@
         @include mobile-screen {
           font-size: 60px;
           padding: 5px 20px;
+          margin: 5px;
+          box-shadow: 0px 0px 5px $button;
         }
       }
       #html-icon {
@@ -71,6 +75,7 @@
       }
       #css-icon {
         color: rgb(33, 77, 251);
+      
       }
       #bootstrap-icon {
         color: rgb(129, 42, 215);
@@ -85,13 +90,16 @@
         color: rgb(0, 208, 255);
       }
       #node-icon {
-        color: rgb(72, 72, 72);
+        color: rgb(149, 149, 149);
       }
       #mysql-icon {
         color: rgb(0, 111, 196);
+  
       }
       #mongodb-icon {
         color: rgb(23, 169, 23);
+        border: 1px solid #b76604;
+        box-shadow: 0px 0px 10px $button;
       }
     }
 
@@ -100,7 +108,7 @@
       button {
         font-size: 16px;
         padding: 15px;
-        background-color: $secodary-color;
+        background-color: $button;
         border: none;
         border-radius: 10px;
         cursor: pointer;
@@ -122,7 +130,7 @@
     .anchor-arrow-up {
       position: absolute;
       bottom: 20px;
-      color: black;
+      color: whitesmoke;
       @include mobile-screen {
         bottom: 60px;
       }

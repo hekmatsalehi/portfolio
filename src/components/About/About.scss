@@ -1,7 +1,7 @@
 @import "../../main.scss";
 
 .about-me {
-  background-color: white;
+  background-color: $secondary-background;
   display: flex;
   @include wide-screen {
     flex-direction: column;
@@ -26,11 +26,12 @@
 
     @include mobile-screen {
       flex: 0.4;
-      min-height: fit-content;
+      min-height: max-content;
     }
     .photo-container {
       width: 70%;
-      background-color: $secodary-color;
+      background-color: $secondary-background;
+      border: solid 0.5px #b76604;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
@@ -40,11 +41,12 @@
       }
       @include small-screen {
         width: 400px;
-        background-color: white;
         transition: width 400ms linear;
+        border: none;
       }
       @include mobile-screen {
         width: 238px;
+       
       }
       #photo {
         margin: 25px;
@@ -70,7 +72,7 @@
     }
     @include mobile-screen {
       flex: 0.6;
-      min-height: fit-content;
+      min-height: max-content;
     }
 
     .right-side-wrapper {
@@ -141,7 +143,7 @@
         }
 
         span {
-          color: $secodary-color;
+          color: whitesmoke;
         }
       }
 
@@ -165,23 +167,23 @@
 
     a {
       position: absolute;
-      bottom: 10px;
+      bottom: 20px;
       left: 45%;
-      color: black;
+      color: whitesmoke;
       @include mobile-screen {
         bottom: 70px;
       }
       .arrow-down-icon {
-        font-size: 70px;
+        font-size: 45px;
         font-weight: lighter;
         animation: arrowBlink 2s infinite;
 
         @include small-screen {
-          font-size: 60px;
+          font-size: 40px;
           transition: font-size 400ms linear;
         }
         @include mobile-screen {
-          font-size: 50px;
+          font-size: 35px;
         }
       }
 

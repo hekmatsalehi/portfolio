@@ -1,7 +1,7 @@
 @import '../../main.scss';
 
 .contact-me {
-  background-color: white;
+  background-color: $secondary-background;
   display: flex;
   @include mobile-screen {
     overflow: hidden;
@@ -16,7 +16,7 @@
     min-height: 600px;
 
     @include mobile-screen {
-      min-height: fit-content;
+      min-height: 500px;
       overflow: hidden;
     }
 
@@ -55,11 +55,14 @@
       }
 
       input {
+        background-color: $secondary-background;
+        border: solid 2px #b76604;
         width: 50%;
         height: 35px;
         font-size: 14px;
         border-radius: 5px;
         margin-top: 10px;
+        color: whitesmoke;
 
         @include mobile-screen {
           height: 30px;
@@ -73,6 +76,9 @@
         font-size: 14px;
         border-radius: 5px;
         margin-top: 15px;
+        color: whitesmoke;
+        background-color: $secondary-background;
+        border: solid 2px #b76604;
 
         @include mobile-screen {
           height: 180px;
@@ -82,12 +88,13 @@
       .error {
         margin: 4px;
         color: rgb(235, 42, 42);
+        overflow: hidden;
       }
       button {
         font-size: 16px;
         width: 150px;
         height: 35px;
-        background-color: $secodary-color;
+        background-color: $button;
         border: none;
         border-radius: 10px;
         cursor: pointer;

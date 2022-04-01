@@ -7,11 +7,15 @@
   top: 0;
   z-index: 3;
   transition: all 1s ease;
-  background: white;
-  border-bottom: 0.5px solid lightgray;
+  background: $primary-background;
+  border-bottom: 0.5px solid #b76604;
   display: flex;
   align-items: center;
   justify-content: center;
+  @include mobile-screen {
+    overflow: hidden;
+    height: 60px;
+  }
 
   .nav-container {
     display: flex;
@@ -69,17 +73,17 @@
 
       .nav-icon {
         font-size: 30px;
-        color: black;
+        color: whitesmoke;
         &:hover {
           transform: scale(0.9);
           transition: 0.3s;
         }
       }
       #linkedin-icon {
-        color: rgb(44, 76, 239);
+        color: rgb(115, 139, 255);
       }
       #email-icon {
-        color: rgb(222, 28, 28);
+        color: rgb(255, 35, 35);
       }
     }
 
@@ -114,7 +118,7 @@
       span {
         width: 100%;
         height: 3px;
-        background-color: black;
+        background-color: whitesmoke;
         transform-origin: left;
         transition: all 1s ease;
       }

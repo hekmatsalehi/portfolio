@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { init } from "ityped";
 import { KeyboardArrowDown } from "@material-ui/icons";
+import { BsFillArrowDownCircleFill } from "react-icons/bs";
 import "./About.scss";
 import MyPicture from '../../images/MyPicture.png'
 
@@ -38,7 +39,7 @@ export default function About() {
           </p>
         </div>
         <a href="#projects">
-          <KeyboardArrowDown className="arrow-down-icon" />
+          <BsFillArrowDownCircleFill className="arrow-down-icon" />
         </a>
       </div>
     </div>
