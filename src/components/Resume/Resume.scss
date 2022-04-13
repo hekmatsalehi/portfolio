@@ -134,15 +134,15 @@
         bottom: 60px;
       }
       .arrow-up-icon {
-        font-size: 45px;
+        font-size: 55px;
         animation: arrowBlink 2s infinite;
 
         @include small-screen {
-          font-size: 40px;
+          font-size: 45px;
           transition: font-size 400ms linear;
         }
         @include mobile-screen {
-          font-size: 30px;
+          font-size: 40px;
         }
       }
       @keyframes arrowBlink {
