@@ -11,7 +11,7 @@ export default function About() {
   useEffect(() => {
     init(roleRef.current, {
       showCursor: false,
-      strings: ["Full Stack Developer"],
+      strings: ["Full Stack Developer", "Front End Developer", "Software Engineer"],
     });
   }, []);
 
