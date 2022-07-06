@@ -20,7 +20,7 @@ export default function Navbar({ showNavMenu, setShowNavMenu }) {
                   <a href='https://www.linkedin.com/in/hekmatullah-salehi' target="_blank"><FaLinkedin className='nav-icon' id='linkedin-icon'/></a>
                 </div>
                 <div className='nav-icon-container'>
-                  <a href="mailto:hekmatullahsalehi@gmail.com"><SiGmail className='nav-icon' id='email-icon'/></a>
+                  <a href="mailto:hekmatullahsalehi01@gmail.com"><SiGmail className='nav-icon' id='email-icon'/></a>
                 </div>
 
             </div>
