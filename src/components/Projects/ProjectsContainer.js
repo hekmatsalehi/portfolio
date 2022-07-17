@@ -65,8 +65,8 @@ const projects = [
       "Shows the weather forecast of the US cities. Used HTML, CSS, JavaScript, and weather API",
     image: `${WeatherDashboardImage}`,
     alt: "Weather Dashboard",
-    repo: "https://github.com/hekmatsalehi/weather-dashboard",
-    demo: "https://hekmatsalehi.github.io/weather-dashboard",
+    repo: "https://github.com/hekmatsalehi/weather-dashboard-js",
+    demo: "https://hekmatsalehi.github.io/weather-dashboard-js",
   },
 ];
 
